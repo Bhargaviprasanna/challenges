@@ -1,0 +1,11 @@
+Hacker Earth Mother's Day Challenge
+1.The libraries used are pandas, numpy, re, nltk and sklearn.
+2.The first step is merging of test and train files into 'Reviews' file.
+3.After merging, step by step cleaning of data in 'original_text' column, which a first column in 'Review'.
+4.Using stopwords and stemming(PorterStemmer) the data is appended into corpus list.
+5.This corpus is then used to create a sparse matrix using CountVectorizer.
+6.Next created 'X' array and 'Y' containing 'sentiment_class'.
+7.Splitting of X_train,X-test,y_train and y_test using the no of rows in train.csv.
+8.Using RandomForestClassifier with trees=10, criterion='entropy' trained the model.
+9.using f1_score from sklearn metrics, calculated the score for X_train actualvalues and predictedvalues.
+10.The test data id and its prediction(y_pred) is converted into a csv file called 'submission.csv'.
